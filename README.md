@@ -1,1 +1,1 @@
-#A food app that provides the near-by restaurants written in jquery
+# A food app that provides the near-by restaurants written in jquery
