@@ -1,0 +1,21 @@
+.container-index {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.restaurants-list {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.col-sm, .gap {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.item-content {
+    display: block;
+    overflow: auto;
+}

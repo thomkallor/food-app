@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <script src="/js/jquery.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> -->
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/restaurant.js"></script>
+    </head>
+    <body>
+        <div class="container container-index">
+            <div class="card">
+                <img class="card-img-top" id="banner_img" src="" style="object-fit:cover"  height="400"alt="Card image cap">
+                <div class="card-body">
+                    <div>
+                        <h2 class="card-text float-left"><p id="res_name">No name</p></h2>
+                        <div id="rating"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container container-index restaurants-list">
+            <div class="row">
+                <a class="col-sm" id="event" href="">
+                    <button type="button" class="btn btn-primary" >Event</button>
+                </a>
+                <a class="col-sm" id="menu" href="">
+                    <button type="button" class="btn btn-primary">Menu's</button>
+                </a>
+                <a class="col-sm" id="gallery" href="">
+                    <button type="button" class="btn btn-primary" >Photo Gallery</button>
+                </a>
+                <a class="col-sm" href="" id="order_url">
+                    <button type="button" class="btn btn-primary">Order Now</button>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <h3>Cuisines</h3>
+                    <p id="cuisines">South Indian, North Indian</p>
+                </div>
+
+                <div class="col-sm">
+                    <h3>Cost For Two</h3>
+                    <p id="cost">Rs 200</p>
+                </div>
+
+                <div class="col-sm">
+                    <h3>Get Direction</h3>
+                    <a id="direction" href="">
+                        <p id="location">chennai</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class=" col-md-12 restaurants-list">
+                <div class="card">
+                    <div class="card-header">
+                        Add Review
+                    </div>
+                    <div class="card-body">
+                            <form class="column" id="feedbackForm" name="feedbackForm">
+                                <div class="form-group">
+                                    <label for="username">Name</label>
+                                    <input type="text" class="form-control" id="username" placeholder="Name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="feedback">Password</label>
+                                    <input type="text" class="form-control" id="content" placeholder="feedback" name="content" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="rating">Rating</label>
+                                    <select class="form-control" id="rating" name="rating">
+                                        <option selected>Choose...</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                            <div class="alert alert-success" role="alert" id="feedbackTrue">
+                                feedback submitted succefully
+                            </div>
+                            <div class="alert alert-danger" role="alert" id="feedbackFalse">
+                                feedback not submitted
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <h2>
+                Reviews
+            </h2>
+            <div class="column col-md-6">
+                <!-- <<div class="card gap">
+                    <div class="card-header">
+                        <span class="float-left">Sachin</span>
+                        <span class="float-right">4/5</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>> -->
+                <div id="content-val"></div>
+            </div>
+        </div>
+
+        <div class="col-md-4 restaurants-list float-left">
+            
+        </div>        
+    </body>
+</html>
